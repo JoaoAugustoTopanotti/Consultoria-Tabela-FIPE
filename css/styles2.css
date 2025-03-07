@@ -1,0 +1,90 @@
+.body {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#cabecalho {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: Verdana;
+    font-size: 20px;
+    padding: 15px;
+}
+
+.interno {
+    background-color: rgb(255, 255, 255);
+    width: 700px;
+    height: 800px;
+    border-radius: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto {
+    font-size: 20px;
+    text-align: center;
+}
+
+.textoselect {
+    color: rgb(0, 0, 0);
+    font-size: large;
+}
+
+.grande {
+    background-color: rgb(255, 255, 255);
+    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    width: 400px;
+    margin: 30px;
+}
+
+.select {
+    background-color: rgb(255, 255, 255);
+    height: 200px;
+}
+
+
+.selectMarcas {
+    position: relative;
+    font-family: Arial;
+}
+  
+.selectMarcas select {
+    display: none; /*hide original SELECT element:*/
+  }
+
+.selectModelos {
+    position: relative;
+    font-family: Arial;
+}
+  
+.selectModelos select {
+    display: none; /*hide original SELECT element:*/
+  }
+
+.selectAnos {
+    position: relative;
+    font-family: Arial;
+}
+  
+.selectAnos select {
+    display: none; /*hide original SELECT element:*/
+  }
+
+.preco {
+    width: 580px;
+    height: 80px;
+    margin: 30px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    color:rgb(0, 0, 0);
+    font-size: 25px;
+    font-weight: bold;
+}

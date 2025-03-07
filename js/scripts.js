@@ -1,4 +1,4 @@
-const url = "https://parallelum.com.br/fipe/api/v1/carros/marcas/22/modelos/798/anos/2012-1";
+const url = "https://parallelum.com.br/fipe/api/v1/carros/marcas/22/modelos/798/anos/2012-1"
 const url2 = "https://parallelum.com.br/fipe/api/v1/carros/marcas/41/modelos/5733/anos/2014-1"
 const url3 = "https://parallelum.com.br/fipe/api/v1/carros/marcas/26/modelos/5640/anos/2013-1"
 
