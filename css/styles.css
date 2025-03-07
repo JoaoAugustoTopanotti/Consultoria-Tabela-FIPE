@@ -6,8 +6,6 @@
   body {
     padding: 15px;
     background-color: black;
-    border: 1px;
-    border-color: aqua;
   }
   
   .hide {
@@ -19,22 +17,35 @@
     height: 600px;
     margin: 20px auto;
     padding: 20px;
-    background-color:white;
+    background-color:rgb(255, 255, 255);
     display: flex;
     justify-content: space-between; /* Espaço entre as colunas */
+    position: relative;
   }
   
   #loading {
     color: black;
   }
 
-  #botão {
-    background-color: #007bff;
-    size: 50px;
-    height: 60px;
-    width: 60px;
-    flex: end;
+  .bottom {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 30px;
+    width: 90px;
+    background-color: #000000;
+    border-radius: 10px;
+    position:absolute;
+    right: 50px;
+    transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
   }
+
+  .bottom:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(67, 67, 92);
+    transform: scale(1.2)
+  }
+
   #h1 {
     text-align: center;
     padding: 20px;
@@ -46,6 +57,7 @@
     display: flex;
     flex-direction: column; /* Deixa os carros empilhados */
     gap: 15px; /* Espaçamento entre os carros */
+    background-color: rgb(255, 255, 255);
 }
 
 /* Cada bloco de carro */
@@ -78,22 +90,16 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end; /* Alinha as imagens à direita */
+    background-color: rgb(255, 255, 255);
 }
 
 /* Estilização das imagens */
 img {
-    width: 330px;
-    height: 190px;
+    width: 280px;
+    height: 168px;
     object-fit: cover; /* Mantém o aspecto da imagem */
+    padding: 6px
 }
-
-
-
-
-
-
-
-
   a,
   input[type="submit"] {
     background-color: #007bff;

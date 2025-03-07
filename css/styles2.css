@@ -53,6 +53,7 @@
 .selectMarcas {
     position: relative;
     font-family: Arial;
+    min-width: 200px;
 }
   
 .selectMarcas select {
@@ -62,6 +63,7 @@
 .selectModelos {
     position: relative;
     font-family: Arial;
+    min-width: 200px;
 }
   
 .selectModelos select {
@@ -71,6 +73,7 @@
 .selectAnos {
     position: relative;
     font-family: Arial;
+    min-width: 200px;
 }
   
 .selectAnos select {
@@ -87,4 +90,50 @@
     color:rgb(0, 0, 0);
     font-size: 25px;
     font-weight: bold;
+}
+
+.cabecalhoInterno {
+    background-color: rgb(255, 255, 255);
+    width: 700px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;   
+    border-radius: 30px;
+}
+
+.voltar {
+    border: solid 1px rgb(67, 67, 92);
+    border-radius: 20px;
+    color: rgb(67, 67, 92);
+    background-color: white;
+    transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
+}
+
+.voltar:hover {
+    background-color: rgb(67, 67, 92);
+    color: white;
+    transform: scale(1.2)
+}
+
+.titulo {
+    background-color: rgb(255, 255, 255);
+    width: 160px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.botao {
+    background-color: rgb(255, 255, 255);
+    height: 60px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;    
+    border-radius: 30px;
 }

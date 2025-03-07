@@ -12,27 +12,39 @@
 <body class="body">
     <h1 id="cabecalho"> Pesquisa de Veículos</h1>
     <div class="interno">
-        <h2 class="texto"> Qual o carro desejado</h2>
+        <div class="cabecalhoInterno">
+            <div class="titulo">
+                <h2 class="texto"> Qual o carro desejado</h2>
+            </div>
+            <div class="botao">
+                <button class="voltar" id="botaoVoltar"> Voltar</button>
+                <script type="text/javascript">
+                    document.getElementById("botaoVoltar").onclick = function () {
+                        location.href = "index.html";
+                    };
+                </script>
+            </div>
+        </div>
         <div class="grande">
             <div class="select">
                 <label class="textoselect"> Selecione a marca</label>
                 <br><br>
                 <select class="selectMarcas"id="selectMarcas">
-                    <option value="marca"></option>
+                    <option value=""></option>
                 </select>
             </div>
             <div class="select">
                 <label class="textoselect"> Selecione o modelo</label>
                 <br><br>
                 <select class="selectModelos"id="selectModelos">
-                    <option value="modelo"></option>
+                    <option value=""></option>
                 </select>
             </div>
             <div class="select">
                 <label class="textoselect"> Selecione o ano</label>
                 <br><br>
                 <select class="selectAnos"id="selectAnos">
-                    <option value="anos"></option>
+                    <option value=""></option>
                 </select>
             </div>
         </div>
