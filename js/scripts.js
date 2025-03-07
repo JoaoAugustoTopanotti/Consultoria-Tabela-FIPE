@@ -5,8 +5,6 @@ const url3 = "https://parallelum.com.br/fipe/api/v1/carros/marcas/26/modelos/564
 const loadingElement = document.querySelector("#loading")
 const carros = document.querySelector("#carros")
 
-//get all carros
-
 async function getAllCarros() {
     let lista = {}
 
@@ -14,19 +12,13 @@ async function getAllCarros() {
 
     const data = await response.json();
 
-    //console.log(data)
-
     const response2 = await fetch(url2, { headers: { "X-Subscription-Token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIwMGIxOWQ5ZC0yMjRmLTQyM2YtOWExMy1mMjg4YmIxNjhlY2EiLCJlbWFpbCI6ImpvYW9hY3RvcGFAZ21haWwuY29tIiwiaWF0IjoxNzQxMjAwMjM4fQ._lj9svjw09AphTRGqRkMJR4zud_9Ua0wZuNtbkB6TmM" } });
 
     const data2 = await response2.json();
 
-    //console.log(data2)
-
     const response3 = await fetch(url3, { headers: { "X-Subscription-Token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIwMGIxOWQ5ZC0yMjRmLTQyM2YtOWExMy1mMjg4YmIxNjhlY2EiLCJlbWFpbCI6ImpvYW9hY3RvcGFAZ21haWwuY29tIiwiaWF0IjoxNzQxMjAwMjM4fQ._lj9svjw09AphTRGqRkMJR4zud_9Ua0wZuNtbkB6TmM" } });
 
     const data3 = await response3.json();
-
-    //console.log(data3)
 
     loadingElement.classList.add("hide");
     lista = { carro1: data, carro2: data2, carro3: data3 };
@@ -35,7 +27,6 @@ async function getAllCarros() {
 }
 
 function Mostrar(lista) {
-    console.log(lista)
 
     for (let key in lista) {
         const carro = lista[key];

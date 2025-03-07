@@ -66,8 +66,6 @@ async function getAllModelos(url2) {
             selectAnos.innerHTML = '<option value="">Selecione um Ano</option>';
         }
         if ((selectedValue) && (selectedValue2 || selectedValue2 != "")) {
-            console.log(selectedValue)
-            console.log(selectedValue2)
 
             const url3 = `https://parallelum.com.br/fipe/api/v1/carros/marcas/${selectedValue}/modelos/${selectedValue2}/anos`
             valorEspecifico.innerHTML = 'Selecione um veículo';
@@ -99,13 +97,12 @@ async function getAllAnos(url3) {
     const selectAnosValue = document.getElementById("selectAnos");
     selectAnosValue.addEventListener("change", async function () {
         selectedValue3 = selectAnosValue.value;
-        console.log("Valor selecionado: ", selectedValue3)
         if ((selectedValue3) && selectedValue3 != "") {
             const urlFinal = `https://parallelum.com.br/fipe/api/v1/carros/marcas/${selectedValue}/modelos/${selectedValue2}/anos/${selectedValue3}`
             const preco = document.querySelector("#preco")
             const response = await fetch(urlFinal, { headers: { "X-Subscription-Token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIwMGIxOWQ5ZC0yMjRmLTQyM2YtOWExMy1mMjg4YmIxNjhlY2EiLCJlbWFpbCI6ImpvYW9hY3RvcGFAZ21haWwuY29tIiwiaWF0IjoxNzQxMjAwMjM4fQ._lj9svjw09AphTRGqRkMJR4zud_9Ua0wZuNtbkB6TmM" } });
             const dataValor = await response.json();
-            valorEspecifico.innerText = `Valor: ${dataValor.Valor}`
+            valorEspecifico.innerText = `Valor: ${dataValor.Valor}  :)`
             preco.appendChild(valorEspecifico);
         }
         else {

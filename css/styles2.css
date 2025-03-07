@@ -7,11 +7,16 @@
 }
 
 #cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-transform: uppercase;
+    font-size: calc(1rem + min(40px, 50vw));
+    font-weight: 900;
+    letter-spacing: -.160ch;
+    line-height: 0.9;
     color: rgb(255, 255, 255);
-    text-align: center;
-    font-family: Verdana;
-    font-size: 20px;
-    padding: 15px;
 }
 
 .interno {
@@ -25,13 +30,16 @@
 }
 
 .texto {
-    font-size: 20px;
+    font-size: 25px;
     text-align: center;
 }
 
 .textoselect {
+    flex-direction: column;
     color: rgb(0, 0, 0);
-    font-size: large;
+    font-size: 20px;
+    font-family: monospace;
+    font-weight: bold;
 }
 
 .grande {
@@ -47,6 +55,7 @@
 .select {
     background-color: rgb(255, 255, 255);
     height: 200px;
+    padding: 25px;
 }
 
 
@@ -57,7 +66,7 @@
 }
   
 .selectMarcas select {
-    display: none; /*hide original SELECT element:*/
+    display: none;
   }
 
 .selectModelos {
@@ -67,7 +76,7 @@
 }
   
 .selectModelos select {
-    display: none; /*hide original SELECT element:*/
+    display: none;
   }
 
 .selectAnos {
@@ -77,7 +86,7 @@
 }
   
 .selectAnos select {
-    display: none; /*hide original SELECT element:*/
+    display: none;
   }
 
 .preco {
@@ -109,6 +118,8 @@
     color: rgb(67, 67, 92);
     background-color: white;
     transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
+    width: 75px;
+    height: 35px;
 }
 
 .voltar:hover {
@@ -119,17 +130,19 @@
 
 .titulo {
     background-color: rgb(255, 255, 255);
-    width: 160px;
+    width: 300px;
     height: 60px;
     justify-content: center;
     align-items: center;
     display: flex;
+    color: black;
+    font-family: monospace;
 }
 
 .botao {
     background-color: rgb(255, 255, 255);
     height: 60px;
-    width: 100px;
+    width: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
